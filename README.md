@@ -1,6 +1,6 @@
 # dock_task
 
-https://imgur.com/EeNicAf
+[Watch the demo video]https://imgur.com/EeNicAf
 
 ## Getting Started
 
