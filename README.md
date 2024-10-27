@@ -1,6 +1,6 @@
 # dock_task
 
-[Watch the demo video]https://imgur.com/EeNicAf
+[Watch the demo video]https://streamable.com/1oxml3
 
 ## Getting Started
 
