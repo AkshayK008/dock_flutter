@@ -2,7 +2,6 @@ import 'package:floating_draggable_widget/floating_draggable_widget.dart';
 import 'package:flutter/material.dart';
 import '../models/dock_item.dart';
 
-/// Widget to display individual Dock items.
 class DockItemWidget extends StatelessWidget {
   const DockItemWidget({super.key, required this.item});
 
@@ -27,21 +26,10 @@ class DockItemWidget extends StatelessWidget {
           child: Center(child: Icon(item.icon, color: Colors.white)),
         ),
         floatingWidget: 
-        SizedBox(),
+        const SizedBox(),
         floatingWidgetWidth: 48,
         floatingWidgetHeight: 48,
       ),
     );
-
-    // Container(
-    //   constraints: const BoxConstraints(minWidth: 48),
-    //   height: 48,
-    //   margin: const EdgeInsets.all(8),
-    //   decoration: BoxDecoration(
-    //     borderRadius: BorderRadius.circular(8),
-    //     color: Colors.primaries[item.icon.hashCode % Colors.primaries.length],
-    //   ),
-    //   child: Center(child: Icon(item.icon, color: Colors.white)),
-    // );
   }
 }
