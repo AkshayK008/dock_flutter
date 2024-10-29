@@ -44,6 +44,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "floating_draggable_widget",
+      "rootUri": "file:///Users/mystuff/.pub-cache/hosted/pub.dev/floating_draggable_widget-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/mystuff/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -182,7 +188,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-10-27T08:15:53.119035Z",
+  "generated": "2024-10-29T16:52:20.597393Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/mystuff/flutter",

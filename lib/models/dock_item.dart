@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// Model class representing a Dock item.
+/// Model for a dock item, representing an icon.
 class DockItem {
-  DockItem(this.icon);
   final IconData icon;
+
+  DockItem({required this.icon});
 }

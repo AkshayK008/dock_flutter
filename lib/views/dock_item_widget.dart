@@ -1,3 +1,4 @@
+import 'package:floating_draggable_widget/floating_draggable_widget.dart';
 import 'package:flutter/material.dart';
 import '../models/dock_item.dart';
 
@@ -9,15 +10,38 @@ class DockItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: const BoxConstraints(minWidth: 48),
-      height: 48,
-      margin: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: Colors.primaries[item.icon.hashCode % Colors.primaries.length],
+    return SizedBox(
+      height: 50,
+      width: 50,
+      child: FloatingDraggableWidget(
+        screenHeight: MediaQuery.of(context).size.height,
+        screenWidth: MediaQuery.of(context).size.width,
+        mainScreenWidget: Container(
+          constraints: const BoxConstraints(minWidth: 48),
+          height: 48,
+          margin: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            color: Colors.primaries[item.icon.hashCode % Colors.primaries.length],
+          ),
+          child: Center(child: Icon(item.icon, color: Colors.white)),
+        ),
+        floatingWidget: 
+        SizedBox(),
+        floatingWidgetWidth: 48,
+        floatingWidgetHeight: 48,
       ),
-      child: Center(child: Icon(item.icon, color: Colors.white)),
     );
+
+    // Container(
+    //   constraints: const BoxConstraints(minWidth: 48),
+    //   height: 48,
+    //   margin: const EdgeInsets.all(8),
+    //   decoration: BoxDecoration(
+    //     borderRadius: BorderRadius.circular(8),
+    //     color: Colors.primaries[item.icon.hashCode % Colors.primaries.length],
+    //   ),
+    //   child: Center(child: Icon(item.icon, color: Colors.white)),
+    // );
   }
 }
