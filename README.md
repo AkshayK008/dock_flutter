@@ -1,4 +1,4 @@
-# dock_task
+# dock_flutter
 
 [!Watch the demo video](https://streamable.com/1oxml3)
 
